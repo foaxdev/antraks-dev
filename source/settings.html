@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Настройки прибора</title>
+
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<main>
+  <h1 class="visually-hidden">Настройки прибора</h1>
+  <section class="settings">
+    <table class="table">
+      <tbody>
+      <tr class="table__row">
+        <td class="table__cell table__cell--header"><div></div></td>
+        <td class="table__cell table__cell--header"><div></div></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<template id="table__row">
+  <tr class="table__row">
+    <td class="table__cell">Текст 1</td>
+    <td class="table__cell">Текст 2</td>
+  </tr>
+</template>
+
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/settings-table.js"></script>
+</body>
+</html>

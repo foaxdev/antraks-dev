@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Приборы</title>
+
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <main>
+    <h1 class="visually-hidden">Список приборов</h1>
+    <section class="devices">
+      <table class="table">
+        <tbody>
+          <tr class="table__row">
+            <td class="table__cell table__cell--header">Имя прибора</td>
+            <td class="table__cell table__cell--header">Тип прибора</td>
+            <td class="table__cell table__cell--header">Местоположение</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <template id="table__row">
+    <tr class="table__row">
+      <td class="table__cell">1</td>
+      <td class="table__cell">2</td>
+      <td class="table__cell">3</td>
+    </tr>
+  </template>
+
+  <script src="js/utils.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/devices-table.js"></script>
+</body>
+</html>

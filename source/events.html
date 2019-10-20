@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>События</title>
+
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<main>
+  <h1 class="visually-hidden">События</h1>
+  <section class="events">
+    <table class="table">
+      <tbody>
+      <tr class="table__row">
+        <td class="table__cell table__cell--header">Тип события</td>
+        <td class="table__cell table__cell--header">Время события</td>
+        <td class="table__cell table__cell--header">
+          <p class="table__title table__title--max">I1 Макс</p>
+          <p class="table__title table__title--min">I1 Мин</p>
+        </td>
+        <td class="table__cell table__cell--header">
+          <p class="table__title table__title--max">I2 Макс</p>
+          <p class="table__title table__title--min">I2 Мин</p>
+        </td>
+        <td class="table__cell table__cell--header">
+          <p class="table__title table__title--max">I3 Макс</p>
+          <p class="table__title table__title--min">I3 Мин</p>
+        </td>
+        <td class="table__cell table__cell--header">
+          <p class="table__title table__title--max">U1 Макс</p>
+          <p class="table__title table__title--min">U1 Мин</p>
+        </td>
+        <td class="table__cell table__cell--header">
+          <p class="table__title table__title--max">U2 Макс</p>
+          <p class="table__title table__title--min">U2 Мин</p>
+        </td>
+        <td class="table__cell table__cell--header">
+          <p class="table__title table__title--max">U3 Макс</p>
+          <p class="table__title table__title--min">U3 Мин</p>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<template id="table__row">
+  <tr class="table__row">
+    <td class="table__cell">Событие 1</td>
+    <td class="table__cell">05:17</td>
+    <td class="table__cell">
+      <p class="table__title table__title--max">100</p>
+      <p class="table__title table__title--min">10</p>
+    </td>
+    <td class="table__cell">
+      <p class="table__title table__title--max">10000</p>
+      <p class="table__title table__title--min">10</p>
+    </td>
+    <td class="table__cell">
+      <p class="table__title table__title--max">100</p>
+      <p class="table__title table__title--min">10</p>
+    </td>
+    <td class="table__cell">
+      <p class="table__title table__title--max">10000</p>
+      <p class="table__title table__title--min">10</p>
+    </td>
+    <td class="table__cell">
+      <p class="table__title table__title--max">100</p>
+      <p class="table__title table__title--min">10</p>
+    </td>
+    <td class="table__cell">
+      <p class="table__title table__title--max">10000</p>
+      <p class="table__title table__title--min">10</p>
+    </td>
+  </tr>
+</template>
+
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/events-table.js"></script>
+</body>
+</html>

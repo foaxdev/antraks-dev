@@ -1,0 +1,10 @@
+.events {
+  border: 1px solid $grey;
+}
+
+@media (min-width: $desktop-width) {
+  .events {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

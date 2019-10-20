@@ -1,0 +1,10 @@
+.settings {
+  border: 1px solid $grey;
+}
+
+@media (min-width: $desktop-width) {
+  .settings {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
