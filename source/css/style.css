@@ -452,7 +452,8 @@ main {
   .table__cell--double-row {
     padding: 4px 25px; }
   .table__cell--double-row.table__cell--header {
-    padding: 7px 10px; }
+    padding: 7px 10px;
+    font-size: 12px; }
   .table__cell--header {
     font-size: 14px;
     color: #BCBCBC;
@@ -539,10 +540,8 @@ main {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    min-width: 46%;
+    min-width: 49%;
     height: 300px; }
-    .filters__wrap--map, .filters__wrap--events {
-      min-width: 52%; }
     .filters__wrap:not(:last-child) {
       margin-bottom: 15px; }
     .filters__wrap:nth-child(3) {

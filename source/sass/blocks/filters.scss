@@ -49,13 +49,8 @@
 
   .filters__wrap {
     flex-grow: 1;
-    min-width: 46%;
+    min-width: 49%;
     height: 300px;
-
-    &--map,
-    &--events {
-      min-width: 52%;
-    }
 
     &:not(:last-child) {
       margin-bottom: 15px;
