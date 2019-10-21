@@ -418,7 +418,7 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 60px;
   min-height: 100vh; }
 
 .table {
@@ -592,7 +592,7 @@ tr.table__row.table__row--selected {
   .head__wrap::after {
     position: absolute;
     content: "";
-    top: 10px;
+    top: 11px;
     right: 15px;
     width: 6px;
     height: 6px;
