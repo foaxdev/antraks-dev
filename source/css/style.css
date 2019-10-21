@@ -746,6 +746,11 @@ select.filter::-ms-expand {
     border-bottom: 1px solid #BCBCBC; }
   .controls__button--max {
     border: 1px solid #BCBCBC; }
+  .controls__button--max-back {
+    border: solid #BCBCBC;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
   .controls__button--min-back {
     position: relative;
     border: 1px solid transparent; }
