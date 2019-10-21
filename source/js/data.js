@@ -27,7 +27,7 @@
     for (let i = 0; i < EVENTS_QUANTITY; i++) {
       arrResult.push({
         'type': 'Событие ' + i,
-        'device-type': window.utils.generateRandomNumber(DEVICES_QUANTITY, 0),
+        'deviceType': window.utils.generateRandomNumber(DEVICES_QUANTITY, 1),
         'time': '05:17',
         'i1': {
           'max': '100',

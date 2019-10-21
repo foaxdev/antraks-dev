@@ -4,7 +4,7 @@
   let elTableRowTemplate = document.querySelector('#table__row').content.querySelector('tr');
   let elEventsTable = document.querySelector('.table');
 
-  let createDeviceRowElement = function (template, event) {
+  let createEventRowElement = function (template, event) {
     var elTableRow = template.cloneNode(true);
 
     elTableRow.querySelector('.table__cell:nth-child(1)').innerText = event.type;
@@ -25,7 +25,7 @@
     return elTableRow;
   };
 
-  window.data.arrEventsData.forEach(function (event) {
-    window.utils.addElementToDom(elEventsTable.querySelector('tbody'), createDeviceRowElement(elTableRowTemplate, event));
+  window.data.arrEventsData.forEach(function (evt) {
+    window.utils.addElementToDom(elEventsTable.querySelector('tbody'), createEventRowElement(elTableRowTemplate, evt));
   });
 })();
