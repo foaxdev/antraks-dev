@@ -47,10 +47,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .head {
-    padding: 0 25px;
-  }
-
   .head__header {
     margin-right: 25px;
 
@@ -59,10 +55,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .head {
-    padding: 0 30px;
-  }
-
   .head__header {
     margin: 10px 30px 13px 0;
 

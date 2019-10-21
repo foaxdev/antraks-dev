@@ -1,0 +1,22 @@
+.support {
+  display: flex;
+  padding: 0 50px;
+  min-height: 40px;
+}
+
+.support__email {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+
+  font-size: 14px;
+  color: $black;
+}
+
+.support__note {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  color: $dark-grey;
+}

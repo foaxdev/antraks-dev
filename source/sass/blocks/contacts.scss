@@ -1,0 +1,19 @@
+.contacts {
+  display: flex;
+  padding: 0 50px;
+  min-height: 40px;
+
+  border-right: 2px solid $grey;
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  color: $black;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

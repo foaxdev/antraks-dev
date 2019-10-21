@@ -1,7 +1,69 @@
 .controls {
   display: flex;
+  margin-left: auto;
 }
 
 .controls__button {
   @include hide-text();
+  margin-right: 10px;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $black;
+    outline: none;
+
+    &::after,
+    &::before {
+      background-color: $black;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--min {
+    border-bottom: 1px solid $dark-grey;
+  }
+
+  &--max {
+    border: 1px solid $dark-grey;
+  }
+
+  &--close {
+    position: relative;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 20px;
+      height: 1px;
+
+      background-color: $dark-grey;
+      left: -3px;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
 }

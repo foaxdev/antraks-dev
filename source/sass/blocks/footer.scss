@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px 0 15px;
+
+  border-top: 1px solid $grey;
+}
+
+.footer__link {
+  display: block;
+  margin-right: 60px;
+}
+
+.footer__address {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding-right: 50px;
+
+  font-size: 14px;
+  font-style: normal;
+
+  border-right: 2px solid $grey;
+}

@@ -30,9 +30,9 @@
             </select>
           </div>
           <div class="controls">
-            <button class="controls__button controls__button-min" type="button">Свернуть</button>
-            <button class="controls__button controls__button-max" type="button">Развернуть</button>
-            <button class="controls__button controls__button-close" type="button">Закрыть</button>
+            <button class="controls__button controls__button--min" type="button">Свернуть</button>
+            <button class="controls__button controls__button--max" type="button">Развернуть</button>
+            <button class="controls__button controls__button--close" type="button">Закрыть</button>
           </div>
         </div>
         <iframe src="devices.html"></iframe>
@@ -52,6 +52,11 @@
               <option value="2">Filter 1</option>
             </select>
           </div>
+          <div class="controls">
+            <button class="controls__button controls__button--min" type="button">Свернуть</button>
+            <button class="controls__button controls__button--max" type="button">Развернуть</button>
+            <button class="controls__button controls__button--close" type="button">Закрыть</button>
+          </div>
         </div>
         <iframe src="events.html"></iframe>
       </div>
@@ -69,6 +74,11 @@
               <option value="1">Filter</option>
               <option value="2">Filter 1</option>
             </select>
+          </div>
+          <div class="controls">
+            <button class="controls__button controls__button--min" type="button">Свернуть</button>
+            <button class="controls__button controls__button--max" type="button">Развернуть</button>
+            <button class="controls__button controls__button--close" type="button">Закрыть</button>
           </div>
         </div>
         <iframe src="sessions.html"></iframe>
@@ -88,6 +98,11 @@
               <option value="2">Filter 1</option>
             </select>
           </div>
+          <div class="controls">
+            <button class="controls__button controls__button--min" type="button">Свернуть</button>
+            <button class="controls__button controls__button--max" type="button">Развернуть</button>
+            <button class="controls__button controls__button--close" type="button">Закрыть</button>
+          </div>
         </div>
         <iframe src="settings.html"></iframe>
       </div>
@@ -95,11 +110,31 @@
       <div class="filters__wrap filters__wrap--map" draggable="true" id="maps">
         <div class="head">
           <h2 class="head__header">Карты</h2>
+          <div class="controls">
+            <button class="controls__button controls__button--min" type="button">Свернуть</button>
+            <button class="controls__button controls__button--max" type="button">Развернуть</button>
+            <button class="controls__button controls__button--close" type="button">Закрыть</button>
+          </div>
         </div>
         <iframe src="map.html"></iframe>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <a class="footer__link" href="/">
+      <img class="footer__logo" src="img/logo.png" width="50" height="50" alt="Логотип компании Антракс">
+    </a>
+    <address class="footer__address">Московская область, г. Фрязино, а/я 2205, 141195</address>
+    <div class="contacts">
+      <a class="contacts__phone" href="tel:84959911230">+7 (495) 991 12 30</a>
+      <a class="contacts__phone" href="tel:88005001792">8 800 500 17 92</a>
+    </div>
+    <div class="support">
+      <a class="support__email" href="mailto:support@antraks.ru">support@antraks.ru</a>
+      <span class="support__note">Техническая поддержка</span>
+    </div>
+  </footer>
 
   <template id="controls">
     <div class="controls">
@@ -111,5 +146,6 @@
   <script src="js/utils.js"></script>
   <script src="js/data.js"></script>
   <script src="js/drag.js"></script>
+  <script src="js/controls.js"></script>
 </body>
 </html>
