@@ -1,0 +1,28 @@
+.min-filters {
+  display: flex;
+  margin: 15px;
+
+  & .filters__wrap {
+    height: 46px;
+    min-width: auto;
+    max-width: fit-content;
+    margin-right: 10px;
+
+    & div {
+      border-bottom: none;
+    }
+
+    & .head {
+      cursor: default;
+    }
+
+    & .pagination,
+    & .head__wrap {
+      display: none;
+    }
+  }
+
+  & iframe {
+    display: none;
+  }
+}

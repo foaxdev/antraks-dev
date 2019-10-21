@@ -24,6 +24,20 @@
     &::before {
       background-color: $black;
     }
+
+    &.controls__button--min-back {
+      border: 1px solid transparent;
+    }
+
+    &.controls__button--min-back::after,
+    &.controls__button--min-back::before {
+      border-color: $black;
+      background-color: transparent;
+    }
+
+    &.controls__button--min-back::after {
+      background-color: $white;
+    }
   }
 
   &:active {
@@ -41,6 +55,41 @@
 
   &--max {
     border: 1px solid $dark-grey;
+  }
+
+  &--max-back {
+
+  }
+
+  &--min-back {
+    position: relative;
+
+    border: 1px solid transparent;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 10px;
+      height: 10px;
+
+      border: 1px solid $dark-grey;
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+
+      background-color: $white;
+    }
+
+    &::before {
+      bottom: 0;
+      left: 0;
+
+      background-color: transparent;
+    }
   }
 
   &--close {
