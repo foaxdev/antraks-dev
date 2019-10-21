@@ -452,7 +452,7 @@ tr.table__row.table__row--selected {
     color: #000000; }
 
 .table__cell {
-  padding: 13px 10px;
+  padding: 13px 0 10px 10px;
   margin-right: 20px;
   font-size: 14px;
   color: #000000;
@@ -462,7 +462,7 @@ tr.table__row.table__row--selected {
   .table__cell--double-row {
     padding: 4px 25px; }
   .table__cell--double-row.table__cell--header {
-    padding: 10px;
+    padding: 8px;
     font-size: 12px; }
   .table__cell--header {
     font-size: 14px;
@@ -523,7 +523,7 @@ tr.table__row.table__row--selected {
       margin-bottom: 0; }
 
 .filters__wrap {
-  height: 370px;
+  height: 400px;
   margin-bottom: 15px;
   background-color: #FFFFFF;
   border: 1px solid #DEE1E2;
