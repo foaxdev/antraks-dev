@@ -13,11 +13,11 @@
 
 .footer__link {
   display: block;
-  margin-right: 60px;
+  margin-right: 20px;
 }
 
 .footer__address {
-  display: flex;
+  display: none;
   align-items: center;
   min-height: 40px;
   padding-right: 50px;
@@ -26,4 +26,16 @@
   font-style: normal;
 
   border-right: 2px solid $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__link {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__address {
+    display: flex;
+  }
 }

@@ -3,7 +3,7 @@ select.filter {
 
   display: block;
   padding: 7px 17px;
-  min-width: 100px;
+  min-width: 50px;
 
   font-size: 10px;
   color: $dark-grey;
@@ -25,6 +25,8 @@ select.filter::-ms-expand {
 
 @media (min-width: $tablet-width) {
   select.filter {
+    min-width: 100px;
+
     font-size: 10px;
   }
 }

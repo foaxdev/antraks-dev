@@ -8,6 +8,7 @@
   border-radius: 20px;
 
   & p {
+    display: none;
     margin: 0 20px;
 
     font-size: 10px;
@@ -51,6 +52,8 @@
     margin-right: 25px;
 
     & p {
+      display: inline;
+
       font-size: 10px;
     }
   }

@@ -19,6 +19,8 @@
 .head__wrap {
   position: relative;
 
+  display: none;
+
   cursor: pointer;
 
   &::after {
@@ -52,6 +54,10 @@
     margin-right: 25px;
 
     font-size: 16px;
+  }
+
+  .head__wrap {
+    display: block;
   }
 }
 

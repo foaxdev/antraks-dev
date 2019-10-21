@@ -33,7 +33,7 @@
 
     let events = 0;
     for (let i = 0; i < window.data.arrEventsData.length; i++) {
-      if (window.data.arrEventsData[i].deviceType.toString() === deviceType) {
+      if (window.data.arrEventsData[i].deviceType.toString() === deviceType && events < 6) {
         window.utils.addElementToDom(elEventsTable.querySelector('tbody'), window.createEventRowElement(elTableRowTemplate, window.data.arrEventsData[i]));
         events++;
       }

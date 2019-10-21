@@ -1,5 +1,5 @@
 .support {
-  display: flex;
+  display: none;
   padding: 0 50px;
   min-height: 40px;
 }
@@ -19,4 +19,10 @@
 
   font-size: 14px;
   color: $dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .support {
+    display: flex;
+  }
 }
