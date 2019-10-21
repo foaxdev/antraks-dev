@@ -16,6 +16,8 @@
 
     &:hover,
     &:focus {
+      color: $black;
+
       background-color: $light-green;
       border-left: 3px solid $green;
     }
@@ -31,6 +33,19 @@
 
   & div {
     min-height: 15px;
+  }
+}
+
+tr.table__row.table__row--selected {
+  background-color: $green;
+
+  & td {
+    color: $white;
+  }
+
+  &:hover td,
+  &:focus td {
+    color: $black;
   }
 }
 

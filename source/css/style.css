@@ -433,6 +433,7 @@ main {
   .table__row:not(:first-child) {
     cursor: pointer; }
     .table__row:not(:first-child):hover, .table__row:not(:first-child):focus {
+      color: #000000;
       background-color: #D8FFE9;
       border-left: 3px solid #2ECC71; }
     .table__row:not(:first-child):active {
@@ -441,6 +442,14 @@ main {
     background-color: #F3F3F3; }
   .table__row div {
     min-height: 15px; }
+
+tr.table__row.table__row--selected {
+  background-color: #2ECC71; }
+  tr.table__row.table__row--selected td {
+    color: #FFFFFF; }
+  tr.table__row.table__row--selected:hover td,
+  tr.table__row.table__row--selected:focus td {
+    color: #000000; }
 
 .table__cell {
   padding: 13px 10px;

@@ -40,6 +40,14 @@
     }
   };
 
+  let removeSelectedStatusFromAllDeviceRows = function () {
+    let elDevicesTable = elDevicesIframe.contentDocument.body.querySelector('table');
+    let elsDevicesTableRow = elDevicesTable.querySelectorAll('.table__row');
+    elsDevicesTableRow.forEach(function (elDeviceTableRow) {
+      elDeviceTableRow.classList.remove('table__row--selected');
+    });
+  };
+
   let addEventsListenersForDevices = function () {
     let elDevicesTable = elDevicesIframe.contentDocument.body.querySelector('table');
     let elsDevicesTableRow = elDevicesTable.querySelectorAll('.table__row');
@@ -47,6 +55,8 @@
     elsDevicesTableRow.forEach(function (elDeviceTableRow, index) {
       if (index !== 0) {
         elDeviceTableRow.addEventListener('click', function () {
+          removeSelectedStatusFromAllDeviceRows();
+          elDeviceTableRow.classList.add('table__row--selected');
           updateEvents(elDeviceTableRow.querySelectorAll('.table__cell')[1].innerText);
         });
       }
