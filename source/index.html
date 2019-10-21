@@ -10,12 +10,22 @@
   <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
 
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $( function() {
+          $("#filters").sortable();
+          $("#filters").disableSelection();
+      } );
+  </script>
 </head>
 <body>
   <main>
     <h1 class="visually-hidden">Фильтры приборов</h1>
     <section class="filters" id="filters">
-      <div class="filters__wrap" draggable="true" id="devices">
+      <div class="filters__wrap" id="devices">
         <div class="head">
           <h2 class="head__header">Список приборов</h2>
           <div class="pagination">
@@ -38,7 +48,7 @@
         <iframe src="devices.html"></iframe>
       </div>
 
-      <div class="filters__wrap filters__wrap--events" draggable="true" id="events">
+      <div class="filters__wrap filters__wrap--events" id="events">
         <div class="head">
           <h2 class="head__header">События</h2>
           <div class="pagination">
@@ -61,7 +71,7 @@
         <iframe src="events.html"></iframe>
       </div>
 
-      <div class="filters__wrap" draggable="true" id="sessions">
+      <div class="filters__wrap" id="sessions">
         <div class="head">
           <h2 class="head__header">Сеансы</h2>
           <div class="pagination">
@@ -84,7 +94,7 @@
         <iframe src="sessions.html"></iframe>
       </div>
 
-      <div class="filters__wrap" draggable="true" id="settings">
+      <div class="filters__wrap" id="settings">
         <div class="head">
           <h2 class="head__header">Настройки прибора</h2>
           <div class="pagination">
@@ -107,7 +117,7 @@
         <iframe src="settings.html"></iframe>
       </div>
 
-      <div class="filters__wrap filters__wrap--map" draggable="true" id="maps">
+      <div class="filters__wrap filters__wrap--map" id="maps">
         <div class="head">
           <h2 class="head__header">Карты</h2>
           <div class="controls">

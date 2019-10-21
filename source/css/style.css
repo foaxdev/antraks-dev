@@ -698,16 +698,10 @@ select.filter::-ms-expand {
     display: block; }
 
 .map__image-wrap {
-  max-width: 1200px;
   position: relative; }
 
 .map__image--hide {
   display: none; }
-
-@media (min-width: 1250px) {
-  .map {
-    width: 1200px;
-    margin: 0 auto; } }
 
 .controls {
   display: -webkit-box;

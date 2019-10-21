@@ -17,7 +17,6 @@
   let maximizeWindow = function (elWindow, elButton) {
     elWindow.classList.add('filters__wrap--max');
     elWindow.classList.remove('filters__wrap--min');
-    elWindow.removeAttribute('draggable');
     elButton.classList.add('controls__button--min-back');
     elButton.previousElementSibling.classList.remove('controls__button--max-back');
     elFiltersArea.appendChild(elWindow);
@@ -25,7 +24,6 @@
 
   let minimizeWindowBack = function (elWindow, elButton) {
     elWindow.classList.remove('filters__wrap--max');
-    elWindow.setAttribute('draggable', 'true');
     elButton.classList.remove('controls__button--min-back');
   };
 
@@ -42,7 +40,6 @@
   let minimizeWindow = function (elWindow, elButton) {
     elWindow.classList.add('filters__wrap--min');
     elWindow.classList.remove('filters__wrap--max');
-    elWindow.removeAttribute('draggable');
     elButton.nextElementSibling.classList.remove('controls__button--min-back');
     elMinFiltersArea.appendChild(elWindow);
     elButton.classList.add('controls__button--max-back');
@@ -50,7 +47,6 @@
 
   let maximizeWindowBack = function (elWindow, elButton) {
     elWindow.classList.remove('filters__wrap--min');
-    elWindow.setAttribute('draggable', 'true');
     elFiltersArea.appendChild(elWindow);
     elButton.classList.remove('controls__button--max-back');
   };
