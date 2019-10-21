@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Карты</title>
+
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<main>
+  <h1 class="visually-hidden">Карты</h1>
+  <section class="map">
+    <div class="map__image-wrap">
+      <img class="map__image" src="img/map.png" alt="Магазин расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" height="430">
+    </div>
+    <div class="map__interactive" id="map"></div>
+  </section>
+</main>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=cd34823f-0b8b-4aba-be82-72027d93120e&lang=en_US"></script>
+<script src="js/map.js"></script>
+</body>
+</html>

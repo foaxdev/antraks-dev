@@ -12,8 +12,104 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <main>
+    <h1 class="visually-hidden">Фильтры приборов</h1>
+    <section class="filters" id="filters">
+      <div class="filters__wrap" draggable="true" id="devices">
+        <div class="head">
+          <h2 class="head__header">Список приборов</h2>
+          <div class="pagination">
+            <button class="pagination__button pagination__button--previous" type="button">Предыдущая</button>
+            <p><span class="pagination__page pagination__page--current">1</span> из <span class="pagination__page pagination__page--all">11</span></p>
+            <button class="pagination__button pagination__button--next" type="button">Следующая</button>
+          </div>
+          <div class="head__wrap">
+            <select class="filter" aria-label="Фильтр">
+              <option value="1">Filter</option>
+              <option value="2">Filter 1</option>
+            </select>
+          </div>
+          <div class="controls">
+            <button class="controls__button controls__button-min" type="button">Свернуть</button>
+            <button class="controls__button controls__button-max" type="button">Развернуть</button>
+            <button class="controls__button controls__button-close" type="button">Закрыть</button>
+          </div>
+        </div>
+        <iframe src="devices.html"></iframe>
+      </div>
 
+      <div class="filters__wrap filters__wrap--events" draggable="true" id="events">
+        <div class="head">
+          <h2 class="head__header">События</h2>
+          <div class="pagination">
+            <button class="pagination__button pagination__button--previous" type="button">Предыдущая</button>
+            <p><span class="pagination__page pagination__page--current">1</span> из <span class="pagination__page pagination__page--all">11</span></p>
+            <button class="pagination__button pagination__button--next" type="button">Следующая</button>
+          </div>
+          <div class="head__wrap">
+            <select class="filter" aria-label="Фильтр">
+              <option value="1">Filter</option>
+              <option value="2">Filter 1</option>
+            </select>
+          </div>
+        </div>
+        <iframe src="events.html"></iframe>
+      </div>
+
+      <div class="filters__wrap" draggable="true" id="sessions">
+        <div class="head">
+          <h2 class="head__header">Сеансы</h2>
+          <div class="pagination">
+            <button class="pagination__button pagination__button--previous" type="button">Предыдущая</button>
+            <p><span class="pagination__page pagination__page--current">1</span> из <span class="pagination__page pagination__page--all">11</span></p>
+            <button class="pagination__button pagination__button--next" type="button">Следующая</button>
+          </div>
+          <div class="head__wrap">
+            <select class="filter" aria-label="Фильтр">
+              <option value="1">Filter</option>
+              <option value="2">Filter 1</option>
+            </select>
+          </div>
+        </div>
+        <iframe src="sessions.html"></iframe>
+      </div>
+
+      <div class="filters__wrap" draggable="true" id="settings">
+        <div class="head">
+          <h2 class="head__header">Настройки прибора</h2>
+          <div class="pagination">
+            <button class="pagination__button pagination__button--previous" type="button">Предыдущая</button>
+            <p><span class="pagination__page pagination__page--current">1</span> из <span class="pagination__page pagination__page--all">11</span></p>
+            <button class="pagination__button pagination__button--next" type="button">Следующая</button>
+          </div>
+          <div class="head__wrap">
+            <select class="filter" aria-label="Фильтр">
+              <option value="1">Filter</option>
+              <option value="2">Filter 1</option>
+            </select>
+          </div>
+        </div>
+        <iframe src="settings.html"></iframe>
+      </div>
+
+      <div class="filters__wrap filters__wrap--map" draggable="true" id="maps">
+        <div class="head">
+          <h2 class="head__header">Карты</h2>
+        </div>
+        <iframe src="map.html"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <template id="controls">
+    <div class="controls">
+      <button class="controls__button controls__button--minimize" type="button">Свернуть</button>
+      <button class="controls__button controls__button--maximize" type="button">Развернуть</button>
+      <button class="controls__button controls__button--close" type="button">Закрыть</button>
+    </div>
+  </template>
   <script src="js/utils.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/drag.js"></script>
 </body>
 </html>

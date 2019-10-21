@@ -1,5 +1,6 @@
 .table {
   width: 100%;
+  background-color: $white;
 }
 
 .table__row {
@@ -29,12 +30,12 @@
   }
 
   & div {
-    min-height: 20px;
+    min-height: 15px;
   }
 }
 
 .table__cell {
-  padding: 15px 10px;
+  padding: 13px 10px;
   margin-right: 20px;
 
   font-size: 14px;
@@ -43,6 +44,14 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &--double-row {
+    padding: 4px 25px;
+  }
+
+  &--double-row.table__cell--header {
+    padding: 7px 10px;
   }
 
   &--header {
@@ -74,6 +83,10 @@
 
     font-size: 16px;
 
+    &--double-row {
+      padding: 4px 25px;
+    }
+
     &--header {
       font-size: 16px;
     }
@@ -88,8 +101,13 @@
   .table__cell {
     padding: 15px 25px;
     margin-right: 35px;
+    max-height: 47px;
 
     font-size: 18px;
+
+    &--double-row {
+      padding: 4px 25px;
+    }
 
     &--header {
       font-size: 20px;
@@ -97,6 +115,6 @@
   }
 
   .table__title {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

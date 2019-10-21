@@ -1,0 +1,36 @@
+select.filter {
+  appearance: none;
+
+  display: block;
+  padding: 7px 17px;
+  min-width: 100px;
+
+  font-size: 10px;
+  color: $dark-grey;
+
+  background-color: $white;
+  border: 1px solid $grey;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+select.filter::-ms-expand {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  select.filter {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  select.filter {
+    font-size: 12px;
+  }
+}

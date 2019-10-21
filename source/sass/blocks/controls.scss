@@ -1,0 +1,7 @@
+.controls {
+  display: flex;
+}
+
+.controls__button {
+  @include hide-text();
+}
